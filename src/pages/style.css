@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+* {
+    font-size: 36px;
+    font-family: 'balsamiq sans'
+}
+
+.sportName{
+    background: #352A84;
+    color: #fff;
+    padding: 30px;
+    font-size: 50px;
+    opacity: 0.6;
+    margin:-20px 0px 40px;
+}
+
+.vs{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.groupBox{
+    display: flex;
+    justify-content: space-around;
+    margin: 60px 0px;
+}
+
+.teamBox{
+    border: solid 2px #352A84;
+    padding: 50px 0px;
+    width: 25%;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.button{
+    border-radius: 30px;
+    outline: none;
+    border: solid 2px #352A84;
+    color: white;
+    background: #352A84;
+    overflow: hidden;
+    transition: all .2s ease;
+    margin-top: 60px;
+    padding: 15px 50px;
+    cursor: pointer;
+}
+
+.activeBotton{
+    background: #867FB5; 
+    border: solid 2px #867FB5;
+}
+
+.draw{
+    border:none;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.activeDraw{
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.red{
+   background:red;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+   margin-right: 10px;
+}
+
+.green{
+   background:green;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+   margin-right: 10px;
+
+}
+
+.state{
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 992px) {
+
+    *{
+        font-size: 24px;
+    }
+
+    .hero{
+        flex-direction: column;
+    }
+
+    .hero img{
+       width: 100%;
+    }
+
+    .groupBox{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .teamBox{
+        width: 65%
+    }
+
+    .draw{
+        margin-bottom: 40px;
+    }
+
+    .sportName{
+        font-size: 34px;
+    }
+}
